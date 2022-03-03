@@ -1,0 +1,19 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+.gradient {
+    /* width: 400px; */
+    height: 400px;
+    border: 1px solid black;
+    /* border-radius: 50%; */
+    /* background-image:repeating-linear-gradient(to top, white 50%, black, red, blue 70%); */
+    /* 默認是由上往下，可以改為to right,to top, to left 更改顏色起始方向*/
+    /* 可以在顏色後方修改百分比 */
+
+    background-image: radial-gradient(closest-side at 150px 150px, white, black);
+                                /* closest-side	
+                                closest-corner
+                                farthest-side	
+                                farthest-corner 可更改擴散起始位置 */
+}
